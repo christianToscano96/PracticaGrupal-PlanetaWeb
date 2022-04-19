@@ -25,12 +25,19 @@ html, body{
 }
 .menu-items {
     display: flex;
-    list-style: none;
     justify-content: space-between;
     align-items: center;
-    width: 550px;
+    width: 1000px;
     margin-top: 16px;
 }
+.icono {
+    margin-top: 17px;
+}
+.enlaces {
+    display: flex;
+    gap: 4rem;
+}
+
 .boton-menu{
     border: 1px solid white;
     background-color: transparent;
@@ -38,7 +45,13 @@ html, body{
     width: 120px;
     height: 40px;
 }
-
+.enlaces-adorno {
+    color: white;
+    text-decoration: none;
+}
+.enlaces-adorno:hover {
+    color: white;
+}
 .header-informacion{
     padding: 60px;
     width: 550px;
