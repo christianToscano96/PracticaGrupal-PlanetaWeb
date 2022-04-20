@@ -3,7 +3,7 @@ html, body{
     background-color: rgb(0 0 0 / 70%); /** Otra opción **/
     background-color: rgba(0, 0, 0, .7); 
     color: white !important;
-
+    font-family: 'Rubik', sans-serif;
 }
 
 .header-app{
@@ -24,18 +24,16 @@ html, body{
     padding-right: 60px;
 }
 .menu-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1000px;
-    margin-top: 16px;
+    width: 50%;
 }
 .icono {
-    margin-top: 17px;
 }
 .enlaces {
     display: flex;
-    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-top: 18px;
 }
 
 .boton-menu{
@@ -54,11 +52,11 @@ html, body{
 }
 .header-informacion{
     padding: 60px;
-    width: 550px;
+    width: 600px;
 }
 .header-titulo{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 80px;
 }
 .header-texto{
     padding-top: 10px;
