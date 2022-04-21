@@ -1,21 +1,23 @@
-html, body{
+html,
+body {
     background-image: url('imagenes/fondo.jpg');
-    background-color: rgb(0 0 0 / 70%); /** Otra opción **/
-    background-color: rgba(0, 0, 0, .7); 
+    background-color: rgb(0 0 0 / 70%);
+    /** Otra opción **/
+    background-color: rgba(0, 0, 0, .7);
     color: white !important;
     font-family: 'Rubik', sans-serif;
 }
 
-.header-app{
+.header-app {
     width: 100%;
     background-image: url('imagenes/luna.jpg');
     height: 1000px;
     background-color: rgba(0, 0, 0, .7);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-.menu-header{
+.menu-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,11 +25,13 @@ html, body{
     padding-left: 60px;
     padding-right: 60px;
 }
+
 .menu-items {
     width: 50%;
 }
-.icono {
-}
+
+.icono {}
+
 .enlaces {
     display: flex;
     justify-content: space-between;
@@ -36,47 +40,63 @@ html, body{
     padding-top: 18px;
 }
 
-.boton-menu{
+.boton-menu {
     border: 1px solid white;
     background-color: transparent;
     color: white;
     width: 120px;
     height: 40px;
 }
+
+.boton-menu:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
 .enlaces-adorno {
     color: white;
     text-decoration: none;
 }
+
 .enlaces-adorno:hover {
     color: white;
 }
-.header-informacion{
+
+.header-informacion {
     padding: 60px;
     width: 600px;
 }
-.header-titulo{
+
+.header-titulo {
     font-weight: bold;
     font-size: 80px;
 }
-.header-texto{
+
+.header-texto {
     padding-top: 10px;
     padding-bottom: 10px;
-    letter-spacing:1px;
+    letter-spacing: 1px;
 }
 
-.boton-header{
+.boton-header {
     margin-top: 20px;
-    background: #0197d6;  /* fallback for old browsers */
+    background: #0197d6;
+    /* fallback for old browsers */
     width: 150px;
     height: 40px;
     border: none;
     border-radius: 2px;
     color: white;
     font-weight: bold;
-    box-shadow:  #0197d6 0px 14px 65px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: #0197d6 0px 14px 65px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.header-boxs{
+.boton-header:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.header-boxs {
     width: 100%;
     height: 300px;
     color: black;
@@ -87,23 +107,25 @@ html, body{
     align-items: center;
     gap: 120px;
 }
-.box-header{
+
+.box-header {
     padding: 20px;
     border-radius: 20px;
     width: 550px;
     height: 200px;
-    background-color:#0c0f14;  
+    background-color: #0c0f14;
     color: white;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.box-texto{
+
+.box-texto {
     display: flex;
     justify-content: center;
     gap: 6px;
 }
 
-.lautaro{
+.lautaro {
     height: 500px;
     width: 100%;
     background-color: white;
