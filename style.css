@@ -77,14 +77,12 @@ html, body{
 .boton-header {
     margin-top: 20px;
     background: #0197d6;
-    /* fallback for old browsers */
     width: 150px;
     height: 40px;
     border: none;
     border-radius: 2px;
     color: white;
     font-weight: bold;
-    box-shadow: #0197d6 0px 14px 65px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .boton-header:hover {
@@ -96,31 +94,57 @@ html, body{
     width: 100%;
     height: 300px;
     color: black;
-    padding-left: 60px;
-    padding-right: 60px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
+    flex-direction: column;
 }
 
 .box-header {
-    padding: 20px;
-    border-radius: 20px;
-    width: 550px;
+    padding: 20px 0px;
+    width: 100%;
     height: 200px;
     background-color: #0c0f14;
     color: white;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-
 .box-texto {
     display: flex;
     justify-content: center;
     gap: 6px;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .custommers{
     width: 100%;
+}
+.box-header, span {
+    color: gray;
+}
+.icon-header{
+    font-size: 40px;
+    color: #0197d6;
+}
+
+@media screen and (min-width: 600px) {
+    .header-boxs {
+        width: 100%;
+        height: 300px;
+        color: black;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .box-header {
+        padding: 15px;
+        border-radius: 20px;
+        width: 350px;
+        height: 220px;
+        background-color: #0c0f14;
+        color: white;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
 }
