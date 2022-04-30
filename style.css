@@ -4,6 +4,10 @@ html, body{
     font-family: 'Rubik', sans-serif;
 }
 
+.centrar-texto {
+    text-align: center;
+}
+
 .header-app {
     width: 100%;
     background-image: url('imagenes/luna.jpg');
@@ -123,4 +127,53 @@ html, body{
 
 .custommers{
     width: 100%;
+}
+
+.contenido-titulo {
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.contenido-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    padding: 2rem;
+}
+
+.contenido-cajas {
+    width: 100%;
+    height: 250px;
+    background-color: #0c0f14;
+    align-items: center;
+    gap: 120px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding: 1rem;
+}
+
+.contenido-imagenes {
+    width: 60px;
+    height: 50px;
+    border-radius: 8rem;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.contenido-flex2 {
+    display: flex;
+    align-items: center;
+}
+
+.parrafo {
+    margin-left: 3rem;
+}
+
+.parrafo2 {
+    margin-top: 10px;
+    margin-left: 5px;
 }
