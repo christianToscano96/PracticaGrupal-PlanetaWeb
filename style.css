@@ -122,7 +122,6 @@ html, body{
 .custommers{
     width: 100%;
 }
-<<<<<<< HEAD
 .box-header, span {
     color: gray;
 }
@@ -152,7 +151,6 @@ html, body{
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
-=======
 
 .contenido-titulo {
     margin-bottom: 25px;
@@ -201,5 +199,49 @@ html, body{
 .parrafo2 {
     margin-top: 10px;
     margin-left: 5px;
->>>>>>> main
+}
+
+
+.box-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.boxes-footer {
+    background-color: transparent;
+    height: 20rem;
+    width: 10rem;
+    margin-left: ;
+    margin-bottom: rem;
+    margin-top: 2.50rem;
+}
+
+.flexer-footer {
+    display: grid;
+}
+
+.titulo-footer {
+    font-weight: bold;
+}
+
+.boton-footer {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 120px;
+    height: 40px;
+    margin-top: 5rem;
+}
+
+.enlaces-footer {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.boton2-footer {
+    text-decoration: none;
+    color: white;
 }
