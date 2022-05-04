@@ -1,198 +1,360 @@
-html,
-body {
-    background-image: url('imagenes/fondo.jpg');
-    background-color: rgb(0 0 0 / 70%);
-    /** Otra opción **/
-    background-color: rgba(0, 0, 0, .7);
-    color: white !important;
-    font-family: 'Rubik', sans-serif;
-}
-
-.header-app {
-    width: 100%;
-    background-image: url('imagenes/luna.jpg');
-    height: 1000px;
-    background-color: rgba(0, 0, 0, .7);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.menu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-.menu-items {
-    width: 50%;
-}
-
-.icono {}
-
-.enlaces {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding-top: 18px;
-}
-
-.boton-menu {
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
-    width: 120px;
-    height: 40px;
-}
-
-.boton-menu:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-
-.enlaces-adorno {
-    color: white;
-    text-decoration: none;
-}
-
-.enlaces-adorno:hover {
-    border: 1px solid white;
-}
-
-.enlaces-adorno:hover {
-    color: white;
-}
-
-.header-informacion {
-    padding: 60px;
-    width: 600px;
-}
-
-.header-titulo {
-    font-weight: bold;
-    font-size: 80px;
-}
-
-.header-texto {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.boton-header {
-    margin-top: 20px;
-    background: #0197d6;
-    /* fallback for old browsers */
-    width: 150px;
-    height: 40px;
-    border: none;
-    border-radius: 2px;
-    color: white;
-    font-weight: bold;
-    box-shadow: #0197d6 0px 14px 65px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.boton-header:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-
-.header-boxs {
-    width: 100%;
-    height: 300px;
-    color: black;
-    padding-left: 60px;
-    padding-right: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
-}
-
-.box-header {
-    padding: 20px;
-    border-radius: 20px;
-    width: 550px;
-    height: 200px;
-    background-color: #0c0f14;
-    color: white;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-.box-texto {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-}
-
-.lautaro {
-    height: 500px;
-    width: 100%;
-    background-color: white;
-}
-
-
-/* PRICING OPTIONS */
-
-.secPricing {
-    width: 80%;
-    background-color: crimson;
-    margin: 0 auto;
-}
-
-.secPricing__title {
-    display: flex;
-    justify-content: center;
-    background: blue;
-    padding: 156px 0 84px 0;
-}
-
-.secPricing__options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.secPricing__options--individual {
-    background: white;
-    color: black;
-    width: 280px;
-    height: 54px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.secPricing__options--bussines {
-    background: #292931;
-    color: white;
-    width: 280px;
-    height: 54px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.secPricing__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: green;
-    margin-top: 148px;
-}
-
-.flex__top {
-    background: orange;
-    width: 100%;
-    height: 430px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-}
+                        html,
+                        body {
+                            background-image: url('imagenes/fondo.jpg') !important;
+                            color: white !important;
+                            font-family: 'Rubik', sans-serif;
+                        }
+                        
+                        .centrar-texto {
+                            text-align: center;
+                        }
+                        
+                        .header-app {
+                            width: 100%;
+                            background-image: url('imagenes/luna.jpg');
+                            height: 1000px;
+                            background-color: rgba(0, 0, 0, .7);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        
+                        .menu-header {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 20px;
+                            padding-left: 60px;
+                            padding-right: 60px;
+                        }
+                        
+                        .menu-items {
+                            width: 50%;
+                        }
+                        
+                        .enlaces {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            list-style: none;
+                            padding-top: 18px;
+                        }
+                        
+                        .boton-menu {
+                            border: 1px solid white;
+                            background-color: transparent;
+                            color: white;
+                            width: 120px;
+                            height: 40px;
+                        }
+                        
+                        .boton-menu:hover {
+                            filter: opacity(0.9);
+                            transform: scale(1.04);
+                        }
+                        
+                        .enlaces-adorno {
+                            color: white;
+                            text-decoration: none;
+                        }
+                        
+                        .enlaces-adorno:hover {
+                            border: 1px solid white;
+                        }
+                        
+                        .enlaces-adorno:hover {
+                            color: white;
+                        }
+                        
+                        .header-informacion {
+                            padding: 60px;
+                            width: 600px;
+                        }
+                        
+                        .header-titulo {
+                            font-weight: bold;
+                            font-size: 80px;
+                        }
+                        
+                        .header-texto {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            letter-spacing: 1px;
+                        }
+                        
+                        .boton-header {
+                            margin-top: 20px;
+                            background: #0197d6;
+                            width: 150px;
+                            height: 40px;
+                            border: none;
+                            border-radius: 2px;
+                            color: white;
+                            font-weight: bold;
+                        }
+                        
+                        .boton-header:hover {
+                            filter: opacity(0.9);
+                            transform: scale(1.04);
+                        }
+                        
+                        .header-boxs {
+                            width: 100%;
+                            height: 300px;
+                            color: black;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        
+                        .box-header {
+                            padding: 20px 0px;
+                            width: 100%;
+                            height: 200px;
+                            background-color: #0c0f14;
+                            color: white;
+                            text-align: center;
+                            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                        }
+                        
+                        .box-texto {
+                            display: flex;
+                            justify-content: center;
+                            gap: 6px;
+                            font-size: 26px;
+                            font-weight: bold;
+                        }
+                        
+                        .custommers {
+                            width: 100%;
+                        }
+                        
+                        HEAD .box-header,
+                        span {
+                            color: gray;
+                        }
+                        
+                        .icon-header {
+                            font-size: 40px;
+                            color: #0197d6;
+                        }
+                        
+                        @media screen and (min-width: 600px) {
+                            .header-boxs {
+                                width: 100%;
+                                height: 300px;
+                                color: black;
+                                padding-left: 60px;
+                                padding-right: 60px;
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: row;
+                            }
+                            .box-header {
+                                padding: 15px;
+                                border-radius: 20px;
+                                width: 350px;
+                                height: 220px;
+                                background-color: #0c0f14;
+                                color: white;
+                                text-align: center;
+                                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                            }
+                        }
+                        
+                        .contenido-titulo {
+                            margin-bottom: 25px;
+                            margin-top: 30px;
+                        }
+                        
+                        .contenido-flex {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 100px;
+                            padding-left: 5rem;
+                            padding-right: 5rem;
+                            padding-bottom: 5rem;
+                            padding: 2rem;
+                        }
+                        
+                        .contenido-cajas {
+                            width: 100%;
+                            background-color: white;
+                        }
+                        /* PRICING OPTIONS */
+                        
+                        .secPricing {
+                            width: 80%;
+                            /* background-color: crimson; */
+                            margin: 0 auto;
+                        }
+                        
+                        .secPricing__title {
+                            display: flex;
+                            justify-content: center;
+                            /* background: blue; */
+                            padding: 156px 0 84px 0;
+                        }
+                        
+                        .secPricing__options {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .secPricing__options--individual {
+                            background: white;
+                            color: black;
+                            width: 185px;
+                            height: 42px;
+                            text-decoration: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .secPricing__options--bussines {
+                            background: #292931;
+                            color: white;
+                            width: 185px;
+                            height: 42px;
+                            text-decoration: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .secPricing__grid {
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            /* background-color: green; */
+                            margin-top: 110px;
+                            margin-bottom: 200px;
+                        }
+                        
+                        .flex__top-vacio {
+                            padding-top: 94px;
+                            height: 468px;
+                            /* background: red; */
+                        }
+                        
+                        .secPricing__grid--andromeda,
+                        .secPricing__grid--moon {
+                            width: 300px;
+                            padding-top: 94px;
+                            background-color: #0b0e13;
+                        }
+                        
+                        .secPricing__grid--andromeda:hover,
+                        .secPricing__grid--moon:hover {
+                            background-image: linear-gradient(to top, #000 0%, #048ac9 100%);
+                        }
+                        
+                        .secPricing__grid--saturn {
+                            width: 300px;
+                            padding-top: 38px;
+                            background-color: #0b0e13;
+                            /* background-color: #087bb2; */
+                        }
+                        
+                        .secPricing__grid--saturn:hover {
+                            background-image: linear-gradient(to top, #000 0%, #048ac9 100%);
+                        }
+                        
+                        .secPricing__grid--saturn .most-popular {
+                            position: relative;
+                            background: #fefdfd;
+                            top: -65px;
+                            right: -40px;
+                            width: 220px;
+                            height: 56px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #3289d7;
+                            font-weight: bold;
+                            font-size: 17px;
+                        }
+                        
+                        .flex__top {
+                            /* background: orange; */
+                            width: 100%;
+                            /* height: 600px; */
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            padding: 20px;
+                            /* height: 250px; */
+                            /* background-color: #0c0f14; */
+                            align-items: center;
+                            gap: 54px;
+                            padding-left: 4rem;
+                            padding-right: 4rem;
+                            padding: 1rem;
+                        }
+                        
+                        .flex__top .btn a {
+                            background-color: #0594d1;
+                            width: 187px;
+                            height: 55px;
+                            margin-bottom: -31px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 20px;
+                            text-decoration: none;
+                        }
+                        
+                        .flex__top h3 {
+                            color: #575757;
+                            font-size: 20px;
+                        }
+                        
+                        .flex__top span {
+                            color: white;
+                            font-size: 40px;
+                        }
+                        
+                        .line-border {
+                            width: 100%;
+                            border: 1px solid gray;
+                        }
+                        
+                        .flex__bottom {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 15px;
+                            margin-top: 46px;
+                        }
+                        
+                        .flex__bottom h3 {
+                            font-size: 13px;
+                            font-weight: bold;
+                            color: #b5b5b5;
+                        }
+                        
+                        .contenido-imagenes {
+                            width: 60px;
+                            height: 50px;
+                            border-radius: 8rem;
+                            margin-right: 5px;
+                            align-items: center;
+                        }
+                        
+                        .contenido-flex2 {
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+                        .parrafo {
+                            margin-left: 3rem;
+                        }
+                        
+                        .parrafo2 {
+                            margin-top: 10px;
+                            margin-left: 5px;
+                        }
