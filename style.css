@@ -122,7 +122,6 @@ html, body{
 .custommers{
     width: 100%;
 }
-<<<<<<< HEAD
 .box-header, span {
     color: gray;
 }
@@ -152,7 +151,6 @@ html, body{
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
-=======
 
 .contenido-titulo {
     margin-bottom: 25px;
@@ -201,5 +199,4 @@ html, body{
 .parrafo2 {
     margin-top: 10px;
     margin-left: 5px;
->>>>>>> main
 }
