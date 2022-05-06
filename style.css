@@ -19,7 +19,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .header-app {
-        background-size: contain;
+        background-size: cover;
     }
 }
 
@@ -75,8 +75,8 @@ body {
         position: absolute;
         top: 77px;
         left: 10px;
-        width: 76px;
-        height: 19px;
+        width: 95px;
+        height: 31px;
         font-size: 11px;
         margin-left: 6px;
     }
@@ -115,7 +115,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .header-titulo {
-        font-size: 18px;
+        font-size: 55px;
     }
 }
 
@@ -127,7 +127,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .header-texto {
-        font-size: 13px;
+        font-size: 19px;
     }
 }
 
@@ -144,10 +144,10 @@ body {
 
 @media screen and (max-width: 600px) {
     .boton-header {
-        width: 82px;
-        height: 26px;
-        font-size: 10px;
-        margin-top: 0;
+        width: 114px;
+        height: 34px;
+        font-size: 14px;
+        margin-top: 14px;
     }
 }
 
@@ -164,6 +164,12 @@ body {
     flex-direction: column;
     margin: auto;
     margin-top: 350px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-boxs {
+        margin-top: 0;
+    }
 }
 
 .box-header {
