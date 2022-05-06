@@ -362,3 +362,45 @@
         font-weight: bold;
         color: #b5b5b5;
     }
+    .box-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
+    }
+    
+    .boxes-footer {
+        background-color: transparent;
+        height: 20rem;
+        width: 10rem;
+        margin-bottom: rem;
+        margin-top: 2.50rem;
+    }
+    
+    .flexer-footer {
+        display: grid;
+    }
+    
+    .titulo-footer {
+        font-weight: bold;
+    }
+    
+    .boton-footer {
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        width: 120px;
+        height: 40px;
+        margin-top: 5rem;
+    }
+    
+    .enlaces-footer {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+    
+    .boton2-footer {
+        text-decoration: none;
+        color: white;
+    }
