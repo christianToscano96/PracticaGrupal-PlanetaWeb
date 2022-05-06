@@ -10,12 +10,17 @@ body {
 }
 
 .header-app {
-  width: 100%;
-   background:linear-gradient(rgba(5, 6, 10, 0.55), rgba(5, 7, 12, 0.85)), url(./imagenes/planeta-tierra-vista-desde-la-luna-3339.jpg) no-repeat;
-   height: 1398px;
+    width: 100%;
+    background: linear-gradient(rgba(5, 6, 10, 0.55), rgba(5, 7, 12, 0.85)), url(./imagenes/planeta-tierra-vista-desde-la-luna-3339.jpg) no-repeat;
+    height: 1398px;
     background-size: cover;
     margin: auto;
-   
+}
+
+@media screen and (max-width: 600px) {
+    .header-app {
+        background-size: contain;
+    }
 }
 
 .menu-header {
@@ -31,7 +36,12 @@ body {
     width: 50%;
 }
 
-.icono {}
+@media screen and (max-width: 600px) {
+    .icono {
+        position: absolute;
+        left: 15px;
+    }
+}
 
 .enlaces {
     display: flex;
@@ -41,12 +51,35 @@ body {
     padding-top: 18px;
 }
 
+@media screen and (max-width: 600px) {
+    .enlaces {
+        font-size: 13px;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        left: -15px;
+        top: 27px;
+    }
+}
+
 .boton-menu {
     border: 1px solid white;
     background-color: transparent;
     color: white;
     width: 120px;
     height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .boton-menu {
+        position: absolute;
+        top: 77px;
+        left: 10px;
+        width: 76px;
+        height: 19px;
+        font-size: 11px;
+        margin-left: 6px;
+    }
 }
 
 .boton-menu:hover {
@@ -68,15 +101,34 @@ body {
     width: 600px;
 }
 
+@media screen and (max-width: 600px) {
+    .header-informacion {
+        padding: 86px 25px;
+        width: 358px;
+    }
+}
+
 .header-titulo {
     font-weight: bold;
     font-size: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-titulo {
+        font-size: 18px;
+    }
 }
 
 .header-texto {
     padding-top: 10px;
     padding-bottom: 10px;
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-texto {
+        font-size: 13px;
+    }
 }
 
 .boton-header {
@@ -90,6 +142,15 @@ body {
     font-weight: bold;
 }
 
+@media screen and (max-width: 600px) {
+    .boton-header {
+        width: 82px;
+        height: 26px;
+        font-size: 10px;
+        margin-top: 0;
+    }
+}
+
 .boton-header:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
@@ -101,7 +162,7 @@ body {
     color: black;
     display: flex;
     flex-direction: column;
-    margin:auto;
+    margin: auto;
     margin-top: 350px;
 }
 
@@ -122,386 +183,451 @@ body {
     font-size: 26px;
     font-weight: bold;
 }
-    .custommers {
+
+.custommers {
+    width: 100%;
+}
+
+.box-header,
+span {
+    color: gray;
+}
+
+.icon-header {
+    font-size: 40px;
+    color: #0197d6;
+}
+
+@media screen and (min-width: 600px) {
+    .header-boxs {
         width: 100%;
-    }
-    
-    .box-header,
-    span {
-        color: gray;
-    }
-    
-    .icon-header {
-        font-size: 40px;
-        color: #0197d6;
-    }
-    
-    @media screen and (min-width: 600px) {
-        .header-boxs {
-            width: 100%;
-            height: 300px;
-            color: black;
-            padding-left: 60px;
-            padding-right: 60px;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-        }
-        .box-header {
-            padding: 15px;
-            border-radius: 20px;
-            width: 350px;
-            height: 220px;
-            background-color: #0c0f14;
-            color: white;
-            text-align: center;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        }
-    }
-    
-    .contenido-titulo {
-        margin-bottom: 25px;
-        margin-top: 30px;
-    }
-    
-    .contenido-flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 100px;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        padding-bottom: 5rem;
-        padding: 2rem;
-    }
-    
-    .contenido-cajas {
-        width: 100%;
-        height: 250px;
-        background-color: #0c0f14;
-        align-items: center;
-        gap: 120px;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        padding: 1rem;
-    }
-    
-    .contenido-imagenes {
-        width: 60px;
-        height: 50px;
-        border-radius: 8rem;
-        margin-right: 5px;
-        align-items: center;
-    }
-    
-    .contenido-flex2 {
-        display: flex;
-        align-items: center;
-    }
-    
-    .parrafo {
-        margin-left: 3rem;
-    }
-    
-    .parrafo2 {
-        margin-top: 10px;
-        margin-left: 5px;
-    }
-    /* PRICING OPTIONS */
-    
-    .secPricing {
-        width: 80%;
-        /* background-color: crimson; */
-        margin: 0 auto;
-    }
-    
-    .secPricing__title {
-        display: flex;
-        justify-content: center;
-        /* background: blue; */
-        padding: 156px 0 84px 0;
-    }
-    
-    .secPricing__options {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .secPricing__options--individual {
-        background: white;
+        height: 300px;
         color: black;
-        width: 185px;
-        height: 42px;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .secPricing__options--bussines {
-        background: #292931;
-        color: white;
-        width: 185px;
-        height: 42px;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .secPricing__grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        /* background-color: green; */
-        margin-top: 110px;
-        margin-bottom: 200px;
-    }
-    
-    .flex__top-vacio {
-        padding-top: 94px;
-        height: 468px;
-        /* background: red; */
-    }
-    
-    .secPricing__grid--andromeda,
-    .secPricing__grid--moon {
-        width: 300px;
-        padding-top: 94px;
-        background-color: #0b0e13;
-    }
-    
-    .secPricing__grid--andromeda:hover,
-    .secPricing__grid--moon:hover {
-        background-image: linear-gradient(to top, #000 0%, #048ac9 100%);
-    }
-    
-    .secPricing__grid--saturn {
-        width: 300px;
-        padding-top: 38px;
-        background-color: #0b0e13;
-        /* background-color: #087bb2; */
-    }
-    
-    .secPricing__grid--saturn:hover {
-        background-image: linear-gradient(to top, #000 0%, #048ac9 100%);
-    }
-    
-    .secPricing__grid--saturn .most-popular {
-        position: relative;
-        background: #fefdfd;
-        top: -65px;
-        right: -40px;
-        width: 220px;
-        height: 56px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #3289d7;
-        font-weight: bold;
-        font-size: 17px;
-    }
-    
-    .flex__top {
-        /* background: orange; */
-        width: 100%;
-        /* height: 600px; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 20px;
-        /* height: 250px; */
-        /* background-color: #0c0f14; */
-        align-items: center;
-        gap: 54px;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        padding: 1rem;
-    }
-    
-    .flex__top .btn a {
-        background-color: #0594d1;
-        width: 187px;
-        height: 55px;
-        margin-bottom: -31px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        text-decoration: none;
-    }
-    
-    .flex__top h3 {
-        color: #575757;
-        font-size: 20px;
-    }
-    
-    .flex__top span {
-        color: white;
-        font-size: 40px;
-    }
-    
-    .line-border {
-        width: 100%;
-        border: 1px solid gray;
-    }
-    
-    .flex__bottom {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        margin-top: 46px;
-    }
-    
-    .flex__bottom h3 {
-        font-size: 13px;
-        font-weight: bold;
-        color: #b5b5b5;
-    }
-    .box-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 7rem;
-    }
-    
-    .boxes-footer {
-        background-color: transparent;
-        height: 20rem;
-        width: 10rem;
-        margin-bottom: rem;
-        margin-top: 2.50rem;
-    }
-    
-    .flexer-footer {
-        display: grid;
-    }
-    
-    .titulo-footer {
-        font-weight: bold;
-    }
-    
-    .boton-footer {
-        border: 1px solid white;
-        background-color: transparent;
-        color: white;
-        width: 120px;
-        height: 40px;
-        margin-top: 5rem;
-    }
-    
-    .enlaces-footer {
-        color: white;
-        text-decoration: none;
-        margin-bottom: 5px;
-    }
-    
-    .boton2-footer {
-        text-decoration: none;
-        color: white;
-    }
-
- 
-    /*contenedor*/
-
-    .contenedor{
-      width: 100%;
-      
-    }
-
-    .content-informacion-a{
-        width: 100%;
-       background:linear-gradient(rgba(5, 7, 12, 0.85), rgba(2, 3, 4, 3.95)), url(./imagenes/planeta-tierra-vista-desde-la-luna-33399.jpg) no-repeat;
-        background-size: cover;
-        margin: auto;
-        margin-bottom: 50px;
-        gap: 88px;
-        height: 591px;
         padding-left: 60px;
-    padding-right: 60px;
+        padding-right: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .box-header {
+        padding: 15px;
+        border-radius: 20px;
+        width: 350px;
+        height: 220px;
+        background-color: #0c0f14;
+        color: white;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+.contenido-titulo {
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.contenido-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    padding: 2rem;
+}
+
+.contenido-cajas {
+    width: 100%;
+    height: 250px;
+    background-color: #0c0f14;
+    align-items: center;
+    gap: 120px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding: 1rem;
+}
+
+.contenido-imagenes {
+    width: 60px;
+    height: 50px;
+    border-radius: 8rem;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.contenido-flex2 {
+    display: flex;
+    align-items: center;
+}
+
+.parrafo {
+    margin-left: 3rem;
+}
+
+.parrafo2 {
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 
-    .content-informacion-b{
-        padding: 60px;
-    }
+/* PRICING OPTIONS */
 
-    
+.secPricing {
+    width: 80%;
+    /* background-color: crimson; */
+    margin: 0 auto;
+}
 
-    .content-informacion-a, .content-informacion-b{
-        display: flex;
-       justify-content: center;
-       justify-content: flex-start;
-       align-items: center;
-       
-       
-    }
+.secPricing__title {
+    display: flex;
+    justify-content: center;
+    /* background: blue; */
+    padding: 156px 0 84px 0;
+}
 
-    .content-texto-a{
-        padding-left: 15px;
+@media screen and (max-width: 600px) {
+    .secPricing__title {
+        margin-top: 50px;
     }
-    .content-titulo{
-        font-weight: bold;
-        font-size: 34px;
-    }
+}
 
-    .border-a, .border-b { 
-        border-left: thick double #32a1ce;
-    }
-    
-    span {
-        padding-left: 10px;
-    }
-    .texto-p{
-        padding-top: 10px;
-       letter-spacing: 1px;
-    }
-    .image-a{
-        padding-left: 56px;
-    }
-    .image-b{
-        padding-right: 60px;
-    }
-    .image-c{
-        width: 100%;
+.secPricing__options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.secPricing__options--individual {
+    background: white;
+    color: black;
+    width: 185px;
+    height: 42px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secPricing__options--bussines {
+    background: #292931;
+    color: white;
+    width: 185px;
+    height: 42px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secPricing__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* background-color: green; */
+    margin-top: 110px;
+    margin-bottom: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .secPricing__grid {
+        grid-template-columns: 1fr;
+        margin-top: -424px;
+        gap: 54px;
     }
-    .image-global{
-        width: 100%;
+}
+
+.flex__top-vacio {
+    padding-top: 94px;
+    height: 468px;
+    /* background: red; */
+}
+
+.secPricing__grid--andromeda,
+.secPricing__grid--moon {
+    width: 300px;
+    padding-top: 94px;
+    background-color: #0b0e13;
+}
+
+.secPricing__grid--andromeda:hover,
+.secPricing__grid--moon:hover {
+    background-image: linear-gradient(to top, #000 0%, #048ac9 100%);
+}
+
+.secPricing__grid--saturn {
+    width: 300px;
+    padding-top: 38px;
+    background-color: #0b0e13;
+    /* background-color: #087bb2; */
+}
+
+.secPricing__grid--saturn:hover {
+    background-image: linear-gradient(to top, #000 0%, #048ac9 100%);
+}
+
+.secPricing__grid--saturn .most-popular {
+    position: relative;
+    background: #fefdfd;
+    top: -65px;
+    right: -40px;
+    width: 220px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3289d7;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .secPricing__grid--saturn .most-popular {
+        width: 141px;
+        height: 40px;
+        right: -81px;
+        font-size: 12px;
     }
-    .img-b{
-        Padding-left: 20px;
+}
+
+.flex__top {
+    /* background: orange; */
+    width: 100%;
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    /* height: 250px; */
+    /* background-color: #0c0f14; */
+    align-items: center;
+    gap: 54px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .flex__top {
+        height: 250px;
+        font-size: 14px;
+        gap: 8px;
     }
-    .img-a, .img-b, .img-c{
-         border-radius:5px;
+    .flex__top h2 {
+        margin-top: -65px;
     }
-    .global-coverage{
-        margin: auto;
+    .flex__top h3 span {
+        font-size: 28px;
+    }
+}
+
+.flex__top .btn a {
+    background-color: #0594d1;
+    width: 187px;
+    height: 55px;
+    margin-bottom: -31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .flex__top .btn a {
+        width: 106px;
+        height: 32px;
+        font-size: 15px;
+    }
+}
+
+.flex__top h3 {
+    color: #575757;
+    font-size: 20px;
+}
+
+.flex__top span {
+    color: white;
+    font-size: 40px;
+}
+
+.line-border {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.flex__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 46px;
+}
+
+@media screen and (max-width: 600px) {
+    .flex__bottom {
+        gap: 8px;
+        margin-top: 46px;
+        height: 206px;
+    }
+}
+
+.flex__bottom h3 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #b5b5b5;
+}
+
+.box-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.boxes-footer {
+    background-color: transparent;
+    height: 20rem;
+    width: 10rem;
+    margin-bottom: rem;
+    margin-top: 2.50rem;
+}
+
+.flexer-footer {
+    display: grid;
+}
+
+.titulo-footer {
+    font-weight: bold;
+}
+
+.boton-footer {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 120px;
+    height: 40px;
+    margin-top: 5rem;
+}
+
+.enlaces-footer {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.boton2-footer {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*contenedor*/
+
+.contenedor {
+    width: 100%;
+}
+
+.content-informacion-a {
+    width: 100%;
+    background: linear-gradient(rgba(5, 7, 12, 0.85), rgba(2, 3, 4, 3.95)), url(./imagenes/planeta-tierra-vista-desde-la-luna-33399.jpg) no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 50px;
+    gap: 88px;
+    height: 591px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.content-informacion-b {
+    padding: 60px;
+}
+
+.content-informacion-a,
+.content-informacion-b {
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-texto-a {
+    padding-left: 15px;
+}
+
+.content-titulo {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.border-a,
+.border-b {
+    border-left: thick double #32a1ce;
+}
+
+span {
+    padding-left: 10px;
+}
+
+.texto-p {
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+.image-a {
+    padding-left: 56px;
+}
+
+.image-b {
+    padding-right: 60px;
+}
+
+.image-c {
+    width: 100%;
+}
+
+.image-global {
+    width: 100%;
+}
+
+.img-b {
+    Padding-left: 20px;
+}
+
+.img-a,
+.img-b,
+.img-c {
+    border-radius: 5px;
+}
+
+.global-coverage {
+    margin: auto;
     margin-top: 59px;
-    }
-    .texto-gc{
-        text-align: center;
-    }
+}
 
-    .titulo-global{
-        text-align: center;
-    }
-    .global-p{
-        text-align: center;
-        padding-top: 10px;
+.texto-gc {
+    text-align: center;
+}
+
+.titulo-global {
+    text-align: center;
+}
+
+.global-p {
+    text-align: center;
+    padding-top: 10px;
     padding-bottom: 34px;
     letter-spacing: 1px;
     padding-left: 146px;
     padding-right: 146px;
-    }
+}
 
-    .boton-content-a{
-        margin-top: 49px;
+.boton-content-a {
+    margin-top: 49px;
     background: #0197d6;
     width: 150px;
     height: 40px;
@@ -510,30 +636,32 @@ body {
     color: white;
     font-weight: bold;
     font-size: 15px;
-    }
+}
 
-    .boton-content-b {
-        margin-top: 133px;
-        background: #0197d6;
-        width: 150px;
-        height: 40px;
-        border: none;
-        border-radius: 2px;
-        color: white;
-        font-weight: bold;
-        font-size: 15px;
-    }
+.boton-content-b {
+    margin-top: 133px;
+    background: #0197d6;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
 
-     .boton-content-a:hover {
-        filter: opacity(0.9);
-        transform: scale(1.04);
-    }
+.boton-content-a:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
 
-    .boton-content-b:hover {
-        filter: opacity(0.9);
-        transform: scale(1.04);
-    }
-    .image-global{display: flex;
-        justify-content: center;
-        padding-bottom: 70px;
-    }
+.boton-content-b:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.image-global {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
