@@ -31,8 +31,6 @@ body {
     width: 50%;
 }
 
-.icono {}
-
 .enlaces {
     display: flex;
     justify-content: space-between;
