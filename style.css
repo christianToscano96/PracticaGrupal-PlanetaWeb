@@ -1,3 +1,5 @@
+
+
 html,
 body {
     background-image: url('imagenes/fondo.jpg') !important;
@@ -122,6 +124,188 @@ body {
     font-size: 26px;
     font-weight: bold;
 }
+
+   /*contenedor*/
+
+   .contenedor{
+    width: 100%;
+    padding: 0px 60px 0px 60px;
+    
+  }
+
+  .content-informacion-a{
+     background:linear-gradient(rgba(5, 7, 12, 0.85), rgba(2, 3, 4, 3.95)), url(./imagenes/planeta-tierra-vista-desde-la-luna-33399.jpg) no-repeat;
+      background-size: cover;
+      margin-bottom: 50px;
+  }
+
+  
+
+  .content-informacion-a, .content-informacion-b{
+      display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 40px;
+     width: 100%;
+     
+  }
+
+  .content-texto{
+  
+      margin: 9px;
+  }
+  .content-titulo{
+      font-weight: bold;
+      font-size: 34px;
+  }
+  .texto-gc{
+      text-align: center;
+  }
+
+  .border-cnt{ 
+      border-left: thick double #32a1ce;
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 40px;
+  }
+  
+  span {
+      padding-left: 10px;
+  }
+  .texto-p{
+      padding-top: 10px;
+      letter-spacing: 1px;
+  }
+  .image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      padding: 5px;
+  }
+
+  
+  .img-a, .img-b, .img-c{
+       border-radius:5px;
+  }
+  .global-coverage{
+      padding-top: 114px;
+  }
+  
+
+  .boton-content{
+  background: #0197d6;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  }
+
+   .boton
+   -content-a:hover {
+      filter: opacity(0.9);
+      transform: scale(1.04);
+  }
+  .image-global{display: flex;
+      justify-content: center;
+      padding-bottom: 70px;
+  }
+ 
+  @media screen and  (max-width:768px){
+
+         .contenedor{
+          display: block;
+          width: 100%;
+          margin:auto;
+          padding: 0px 20px 0px 20px;
+         }
+          .content-informacion-a, .content-informacion-b{
+              display: block;
+             justify-content:center;
+             align-items: center;
+             text-align: center;
+             width: 100%;
+             
+          }
+      
+          .content-texto{
+            margin: auto;
+            text-align: center;
+            /* padding: 5px; */
+            margin-bottom: 20px;
+          
+              
+          }
+          .content-titulo{
+              font-weight: bold;
+              font-size: 24px;
+          }
+          .texto-gc{
+              text-align: center;
+          }
+
+         .border-cnt{
+            text-align: left;
+            margin-top: 40px;
+         }
+      
+          .border-color{ 
+              color:#666f73;
+          }
+
+          
+          span {
+              padding-left: 10px;
+          }
+          .texto-p{
+            text-align: center;
+            /* padding-top: 10px; */
+            letter-spacing: 1px;
+            padding-bottom: 20px;
+    
+          }
+
+         .image{
+           display: block;
+           justify-content: center;
+           align-items: center;
+           padding: 5px;
+         }
+
+  
+         .img-a, .img-b, .img-c{
+             border-radius:5px;
+             width: 100%;
+         }
+        .global-coverage{
+           padding-top: 29px;
+         }
+  
+
+        .boton-content{
+           background: #0197d6;
+           width: 158px;
+           height: 35px;
+           border: none;
+           border-radius: 20px;
+           color: white;
+           font-weight: bold;
+           font-size: 15px;
+         }
+
+        .boton-content-a:hover {
+           filter: opacity(0.9);
+           transform: scale(1.04);
+        }
+       .image-global{display: block;
+           justify-content: center;
+           
+        }
+  }
+
     .custommers {
         width: 100%;
     }
@@ -195,7 +379,7 @@ body {
     }
     
     .contenido-flex2 {
-        display: flex;
+         display: flex;
         align-items: center;
     }
     
@@ -211,14 +395,14 @@ body {
     
     .secPricing {
         width: 80%;
-        /* background-color: crimson; */
+     
         margin: 0 auto;
     }
     
     .secPricing__title {
         display: flex;
         justify-content: center;
-        /* background: blue; */
+       
         padding: 156px 0 84px 0;
     }
     
@@ -253,7 +437,7 @@ body {
     .secPricing__grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        /* background-color: green; */
+       
         margin-top: 110px;
         margin-bottom: 200px;
     }
@@ -261,7 +445,7 @@ body {
     .flex__top-vacio {
         padding-top: 94px;
         height: 468px;
-        /* background: red; */
+     
     }
     
     .secPricing__grid--andromeda,
@@ -280,7 +464,7 @@ body {
         width: 300px;
         padding-top: 38px;
         background-color: #0b0e13;
-        /* background-color: #087bb2; */
+     
     }
     
     .secPricing__grid--saturn:hover {
@@ -303,16 +487,15 @@ body {
     }
     
     .flex__top {
-        /* background: orange; */
+        
         width: 100%;
-        /* height: 600px; */
+      
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         padding: 20px;
-        /* height: 250px; */
-        /* background-color: #0c0f14; */
+       
         align-items: center;
         gap: 54px;
         padding-left: 4rem;
@@ -406,134 +589,3 @@ body {
         color: white;
     }
 
- 
-    /*contenedor*/
-
-    .contenedor{
-      width: 100%;
-      
-    }
-
-    .content-informacion-a{
-        width: 100%;
-       background:linear-gradient(rgba(5, 7, 12, 0.85), rgba(2, 3, 4, 3.95)), url(./imagenes/planeta-tierra-vista-desde-la-luna-33399.jpg) no-repeat;
-        background-size: cover;
-        margin: auto;
-        margin-bottom: 50px;
-        gap: 88px;
-        height: 591px;
-        padding-left: 60px;
-    padding-right: 60px;
-}
-
-
-    .content-informacion-b{
-        padding: 60px;
-    }
-
-    
-
-    .content-informacion-a, .content-informacion-b{
-        display: flex;
-       justify-content: center;
-       justify-content: flex-start;
-       align-items: center;
-       
-       
-    }
-
-    .content-texto-a{
-        padding-left: 15px;
-    }
-    .content-titulo{
-        font-weight: bold;
-        font-size: 34px;
-    }
-
-    .border-a, .border-b { 
-        border-left: thick double #32a1ce;
-    }
-    
-    span {
-        padding-left: 10px;
-    }
-    .texto-p{
-        padding-top: 10px;
-       letter-spacing: 1px;
-    }
-    .image-a{
-        padding-left: 56px;
-    }
-    .image-b{
-        padding-right: 60px;
-    }
-    .image-c{
-        width: 100%;
-
-    }
-    .image-global{
-        width: 100%;
-    }
-    .img-b{
-        Padding-left: 20px;
-    }
-    .img-a, .img-b, .img-c{
-         border-radius:5px;
-    }
-    .global-coverage{
-        margin: auto;
-    margin-top: 59px;
-    }
-    .texto-gc{
-        text-align: center;
-    }
-
-    .titulo-global{
-        text-align: center;
-    }
-    .global-p{
-        text-align: center;
-        padding-top: 10px;
-    padding-bottom: 34px;
-    letter-spacing: 1px;
-    padding-left: 146px;
-    padding-right: 146px;
-    }
-
-    .boton-content-a{
-        margin-top: 49px;
-    background: #0197d6;
-    width: 150px;
-    height: 40px;
-    border: none;
-    border-radius: 2px;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    }
-
-    .boton-content-b {
-        margin-top: 133px;
-        background: #0197d6;
-        width: 150px;
-        height: 40px;
-        border: none;
-        border-radius: 2px;
-        color: white;
-        font-weight: bold;
-        font-size: 15px;
-    }
-
-     .boton-content-a:hover {
-        filter: opacity(0.9);
-        transform: scale(1.04);
-    }
-
-    .boton-content-b:hover {
-        filter: opacity(0.9);
-        transform: scale(1.04);
-    }
-    .image-global{display: flex;
-        justify-content: center;
-        padding-bottom: 70px;
-    }
