@@ -386,6 +386,7 @@ body {
     
 .custommers {
     width: 100%;
+    padding: 20px;
 }
 
 .box-header,
@@ -424,7 +425,7 @@ span {
 .contenido-titulo {
     margin-bottom: 25px;
     margin-top: 30px;
-    padding: 20px;
+    
 }
 
 @media (min-width: 768px) {
@@ -437,6 +438,7 @@ span {
         padding-right: 5rem;
         padding-bottom: 5rem;
         padding: 2rem;
+        
     }
 }
 
