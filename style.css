@@ -8,7 +8,12 @@ body {
 .centrar-texto {
     text-align: center;
 }
-
+.icono-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
 .header-app {
     width: 100%;
     background: linear-gradient(rgba(5, 6, 10, 0.55), rgba(5, 7, 12, 0.85)), url(./imagenes/planeta-tierra-vista-desde-la-luna-3339.jpg) no-repeat;
@@ -20,6 +25,7 @@ body {
 @media screen and (max-width: 600px) {
     .header-app {
         background-size: cover;
+        height: 1273px;
     }
 }
 
@@ -37,9 +43,12 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .icono {
-        position: absolute;
-        left: 15px;
+    .icono-header{
+      left: 11px;
+      position: absolute;
+      margin-top: 4px;
+     
+      
     }
 }
 
@@ -194,30 +203,31 @@ body {
 
   .contenedor{
     width: 100%;
-    padding: 0px 60px 0px 60px;
     
   }
 
   .content-informacion-a{
-     background:linear-gradient(rgba(5, 7, 12, 0.85), rgba(2, 3, 4, 3.95)), url(./imagenes/planeta-tierra-vista-desde-la-luna-33399.jpg) no-repeat;
+     background:linear-gradient(rgba(2, 3, 6, 0.85), rgba(1, 2, 3, 4.95)), url(./imagenes/planeta-tierra-vista-desde-la-luna-33399.jpg) no-repeat;
       background-size: cover;
       margin-bottom: 50px;
   }
+ 
 
   
 
-  .content-informacion-a, .content-informacion-b{
+  .content-informacion-a, .content-informacion-b, .content-informacion-d, .content-informacion-e{
       display: flex;
      justify-content: center;
      align-items: center;
-     margin-bottom: 40px;
      width: 100%;
+     padding: 40px;
+     gap: 40px;
      
   }
 
   .content-texto{
-  
-      margin: 9px;
+    margin: 9px;
+    padding: 10px
   }
   .content-titulo{
       font-weight: bold;
@@ -231,31 +241,41 @@ body {
       border-left: thick double #32a1ce;
       margin: auto;
       margin-bottom: 20px;
-      margin-top: 40px;
+      
+    
   }
   
   span {
       padding-left: 10px;
   }
   .texto-p{
-      padding-top: 10px;
+
+      padding-top: 20px;
       letter-spacing: 1px;
+      padding-bottom: 114px;
   }
   .image{
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 10px;
-      padding: 5px;
+    
   }
 
   
-  .img-a, .img-b, .img-c{
+  .img-a, .img-b, .img-c, .img-d, .img-e {
        border-radius:5px;
+
   }
   .global-coverage{
-      padding-top: 114px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+
   }
+
   
 
   .boton-content{
@@ -274,10 +294,8 @@ body {
       filter: opacity(0.9);
       transform: scale(1.04);
   }
-  .image-global{display: flex;
-      justify-content: center;
-      padding-bottom: 70px;
-  }
+  
+
  
   @media screen and  (max-width:768px){
 
@@ -285,14 +303,15 @@ body {
           display: block;
           width: 100%;
           margin:auto;
-          padding: 0px 20px 0px 20px;
          }
-          .content-informacion-a, .content-informacion-b{
+          .content-informacion-a, .content-informacion-b, .content-informacion-d, .content-informacion-e{
               display: block;
              justify-content:center;
              align-items: center;
              text-align: center;
              width: 100%;
+             padding: 20px;
+             margin: 0px;
              
           }
       
@@ -337,16 +356,20 @@ body {
            display: block;
            justify-content: center;
            align-items: center;
-           padding: 5px;
+           margin: 0px;
          }
 
   
-         .img-a, .img-b, .img-c{
+         .img-a, .img-b, .img-c, .img-d, .img-e{
              border-radius:5px;
              width: 100%;
          }
         .global-coverage{
-           padding-top: 29px;
+            display: block;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+           padding: 25px;
          }
   
 
@@ -365,15 +388,13 @@ body {
            filter: opacity(0.9);
            transform: scale(1.04);
         }
-       .image-global{display: block;
-           justify-content: center;
-           
-        }
+      
   }
     
     
 .custommers {
     width: 100%;
+    padding: 20px;
 }
 
 .box-header,
@@ -412,6 +433,7 @@ span {
 .contenido-titulo {
     margin-bottom: 25px;
     margin-top: 30px;
+    
 }
 
 @media (min-width: 768px) {
@@ -424,6 +446,7 @@ span {
         padding-right: 5rem;
         padding-bottom: 5rem;
         padding: 2rem;
+        
     }
 }
 
