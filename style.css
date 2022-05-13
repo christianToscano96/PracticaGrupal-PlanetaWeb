@@ -273,6 +273,7 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 60px;
+    padding: 40px;
 
   }
 
@@ -280,10 +281,10 @@ body {
 
   .boton-content{
   background: #0197d6;
-  width: 150px;
+  width: 130px;
   height: 40px;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   color: white;
   font-weight: bold;
   font-size: 15px;
@@ -374,11 +375,11 @@ body {
   
 
         .boton-content{
-           background: #0197d6;
-           width: 158px;
+           background: #32a1ce;
+           width: 130px;
            height: 35px;
            border: none;
-           border-radius: 20px;
+           border-radius: 4px;
            color: white;
            font-weight: bold;
            font-size: 15px;
